@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "컴퓨터 네트워크 1주차"
-subtitle: "What is Network?"
+title: "컴퓨터 네트워크 (1.1~1.4)"
+subtitle: "Chapter1. 컴퓨터 네트워크와 인터넷"
 date: 2023-03-26 23:45:13 -0400
 background: '/img/network-week1/01.jpg'
 ---
@@ -178,49 +178,3 @@ TDM: 시간 별로 쪼개어 경로를 공유한다.
 <p>송수신측 사이에서 비트가 전송되는 전송률 (bits/시간단위)
 ///</p>
 <h2>처리율: 인터넷 시나리오</h2>
-<h1>1.5 프로토콜 계층, 서비스 모델</h1>
-<p>네트워크는 많은 요소들로 구성되어 복잡하기 때문에 네트워크 구조를 조직할 수 있을까라는 생각을 해볼 수 있고 그 구조를 계층화 하는 것이 좋을 수 있다.
-계층화하는 이유</p>
-<ol>
-<li>명시적인 구조가 복잡한 시스템의 요소들의 식별과 관계를 분명하게 해줌
-<ul>
-<li>논의를 위한 계층화된 참조 모델</li>
-</ul>
-</li>
-<li>모율화로 시스템의 관리와 갱신이 용이해짐
-<ul>
-<li>한 계층의 구현을 변경해도 시스템의 다른 부분에 영향을 주지 않음</li>
-</ul>
-</li>
-</ol>
-<h2>인터넷 프로토콜 스택</h2>
-<ul>
-<li>application: 네트워크 응용을 지원
-<ul>
-<li>FTP, SMTP, HTTP</li>
-</ul>
-</li>
-<li>transport: 프로세스간 데이터 전송
-<ul>
-<li>TCP, UDP</li>
-</ul>
-</li>
-<li>network: 출발지에서 도착지까지의 datagram 라우팅
-<ul>
-<li>IP, routing protocols</li>
-</ul>
-</li>
-<li>link: 이웃한 네트워크 요소들간의 데이터 전송
-<ul>
-<li>Ehternet, 820.111, PPP</li>
-</ul>
-</li>
-<li>physical(물리): bits &quot;on the wire&quot;</li>
-</ul>
-<h2>ISO/OSI 참조 모델</h2>
-<ul>
-<li>표현(presentation): 응용이 데이터의 의미를 해석하도록 해줌</li>
-<li>세션(session): 데이터 교환 시의 동기화(synchronization), checkpointing, 복구(recovery)</li>
-<li>인터넷 스택은 이 계층들이 없음</li>
-</ul>
-<h2>캡슐화(Encapsulation)</h2>
